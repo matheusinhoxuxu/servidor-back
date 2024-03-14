@@ -1,6 +1,14 @@
 const express = require('express')
 const router = express.Router()
 
+
+router.post('/ex1', function(req,res){  
+    
+    
+    res.json({})
+})
+
+
 router.post('/ex2', function (req, res) {
     const { nome, horastrabalhadas, valorHora, filhos } = req.body
 
