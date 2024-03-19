@@ -3,9 +3,11 @@ const router = express.Router()
 
 
 router.post('/ex1', function(req,res){  
+    const minimo = req.body.minimo
+    const maximo  = req.body.maximo 
+
     
-    
-    res.json({})
+
 })
 
 
@@ -19,6 +21,9 @@ router.post('/ex2', function (req, res) {
 
     res.json({ nome, salarioBruto, bonificacaoFilhos, salarioFinal })
 })
+
+
+
 
 router.post('/ex5', function (req, res) {
     const { n1, n2, n3 } = req.body
@@ -154,6 +159,7 @@ router.post('/ex8', function (req, res) {
     res.json(`A velocidade alcançada pelo ${nomePiloto} foi de ${VM}km/hs`)
 
 })
+
 
 
 router.post('/ex9', function (req, res) {
