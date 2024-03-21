@@ -14,6 +14,8 @@ router.post('/ex1', function(req,res){
 })
 
 
+
+
 router.post('/ex2', function (req, res) {
     const { nome, horastrabalhadas, valorHora, filhos } = req.body
 
