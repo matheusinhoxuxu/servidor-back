@@ -8,11 +8,10 @@ router.post('/ex1', function(req,res){
 
     const estoquemedio = minimo + maximo / 2
 
-    res.json(estoquemedio)
+    res.status(200).res.json(estoquemedio)
 
 
 })
-
 
 
 
